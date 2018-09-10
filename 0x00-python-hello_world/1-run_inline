@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PYTESTSSS | python3
+echo $PYCODE | python3
