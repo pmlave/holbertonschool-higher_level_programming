@@ -1,3 +1,3 @@
 Data structures set and dictionary
----\
-0. 
+---
+0. Squaring every value in a matrix.
