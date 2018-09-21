@@ -6,4 +6,4 @@ Data structures set and dictionary
 3. Determining all common elements between 2 lists.
 4. Returning only elements present in only one set.
 5. Returning the number of keys in a given dictionary.
-6.
+6. Print all entries in a dictionary ordered by keys.
