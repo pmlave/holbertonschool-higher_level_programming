@@ -5,4 +5,5 @@ Data structures set and dictionary
 2. Sum all unique elements of a list.
 3. Determining all common elements between 2 lists.
 4. Returning only elements present in only one set.
-5. 
+5. Returning the number of keys in a given dictionary.
+6.
