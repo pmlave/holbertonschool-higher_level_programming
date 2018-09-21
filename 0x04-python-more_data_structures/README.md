@@ -10,3 +10,5 @@ Data structures set and dictionary
 7. Update or add an entry to a dictionary.
 8. Delete a single key from the dictionary.
 9. Multiply all values in a dictionary by 2.
+10. Checking values associated with keys and returning a key relating to the
+    highest value.
