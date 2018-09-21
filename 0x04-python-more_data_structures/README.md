@@ -8,3 +8,4 @@ Data structures set and dictionary
 5. Returning the number of keys in a given dictionary.
 6. Print all entries in a dictionary ordered by keys.
 7. Update or add an entry to a dictionary.
+8. Delete a single key from the dictionary.
