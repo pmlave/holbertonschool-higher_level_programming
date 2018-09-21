@@ -4,4 +4,5 @@ Data structures set and dictionary
 1. Replace a specific element with a new one in a new list.
 2. Sum all unique elements of a list.
 3. Determining all common elements between 2 lists.
-4. 
+4. Returning only elements present in only one set.
+5. 
