@@ -9,3 +9,4 @@ Data structures set and dictionary
 6. Print all entries in a dictionary ordered by keys.
 7. Update or add an entry to a dictionary.
 8. Delete a single key from the dictionary.
+9. Multiply all values in a dictionary by 2.
