@@ -12,3 +12,4 @@ Data structures set and dictionary
 9. Multiply all values in a dictionary by 2.
 10. Checking values associated with keys and returning a key relating to the
     highest value.
+11. Multiply all list values by a certain number using map.
