@@ -11,11 +11,12 @@ try:
         if i == 0:
             continue
         new_object.append(sys.argv[i])
-        save_to_json_file(new_object, filename)
+    save_to_json_file(new_object, filename)
 except FileNotFoundError:
+    new_object = []
     with open(filename, 'a+') as f:
         for i in range(len(sys.argv)):
             if i == 0:
                 continue
-            f.write(sys.argv[i])
-            save_to_json_file(new_object, filename)
+            new_object.append(sys.argv[i])
+        save_to_json_file(new_object, filename)
