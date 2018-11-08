@@ -5,3 +5,4 @@ First look into inheritance in Python.
 2. Check if an object is an instance of a specified class.
 3. Check if an object is an instance of a class or an instance of a specified class or inherited from the specified class.
 4. Checking if an object is an instance of a class inherited from a specified class.
+5. Creating an empty class that will be built upon.
