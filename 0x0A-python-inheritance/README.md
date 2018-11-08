@@ -7,3 +7,4 @@ First look into inheritance in Python.
 4. Checking if an object is an instance of a class inherited from a specified class.
 5. Creating an empty BaseGeometry class that will be built upon.
 6. Adding a public method to the BaseGeometry class.
+7. Implementing another instance method and adding many test cases.

@@ -22,3 +22,23 @@ TypeError: integer_validator() missing 1 required positional argument: 'value'
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
+>>> bg.integer_validator("width", None)
+Traceback (most recent call last):
+...
+TypeError: width must be an integer
+
+>>> bg.integer_validator("width", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: width must be an integer
+
+>>> bg.integer_validator("width", (4,))
+Traceback (most recent call last):
+...
+TypeError: width must be an integer
+
+>>> bg.integer_validator("width", [4])
+Traceback (most recent call last):
+...
+TypeError: width must be an integer
