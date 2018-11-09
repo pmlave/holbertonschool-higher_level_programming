@@ -8,3 +8,4 @@ First look into inheritance in Python.
 5. Creating an empty BaseGeometry class that will be built upon.
 6. Adding a public method to the BaseGeometry class.
 7. Implementing another instance method and adding many test cases.
+8. Implementing a class that inherits from BaseGeometry.
