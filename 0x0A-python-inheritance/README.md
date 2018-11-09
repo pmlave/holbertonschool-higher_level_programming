@@ -9,3 +9,4 @@ First look into inheritance in Python.
 6. Adding a public method to the BaseGeometry class.
 7. Implementing another instance method and adding many test cases.
 8. Implementing a class that inherits from BaseGeometry.
+9. Implementing further methods for the Rectangle class.`
