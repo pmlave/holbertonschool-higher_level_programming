@@ -11,3 +11,4 @@ First look into inheritance in Python.
 8. Implementing a class that inherits from BaseGeometry.
 9. Implementing further methods for the Rectangle class.
 10. Creating a new class Square that inherits from Rectangle that inherits from BaseGeometry.
+11. Implementing more methods in our Square class.
