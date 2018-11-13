@@ -2,8 +2,6 @@
 """Base for all other classes and methods"""
 
 
-
-
 class Base:
     """Base class beginning"""
     __nb_objects = 0
