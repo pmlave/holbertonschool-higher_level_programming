@@ -20,12 +20,14 @@ class Rectangle(Base):
         self.__y = y
 
     def integer_validator1(self, name, value):
+        '''Checks integer value for height or width'''
         if not type(value) == int:
             raise TypeError("{} must be an integer".format(name))
         if value < 1:
             raise ValueError("{} must be > 0".format(name))
 
     def integer_validator2(self, name, value):
+        '''Checks the integer value for x or y'''
         if not type(value) == int:
             raise TypeError("{} must be an integer".format(name))
         if value < 0:
