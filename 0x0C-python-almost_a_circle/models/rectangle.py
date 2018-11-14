@@ -83,7 +83,11 @@ class Rectangle(Base):
 
     def display(self):
         '''Display the rectangle represented by #'s'''
+        for blank in range(0, self.__y):
+            print()
         for outer in range(0, self.__height):
+            for blank in range(0, self.__x):
+                print(' ', end='')
             for inner in range(0, self.__width):
                 print("#", end='')
             print()
