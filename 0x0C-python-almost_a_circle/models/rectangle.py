@@ -10,10 +10,26 @@ class Rectangle(Base):
         super().__init__()
         if id is not None:
             self.id = id
+        self.integer_validator1("width", width)
+        self.integer_validator1("height", height)
+        self.integer_validator2("x", x)
+        self.integer_validator2("y", y)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
+
+    def integer_validator1(self, name, value):
+        if not type(value) == int:
+            raise TypeError("{} must be an integer".format(name))
+        if value < 1:
+            raise ValueError("{} must be > 0".format(name))
+
+    def integer_validator2(self, name, value):
+        if not type(value) == int:
+            raise TypeError("{} must be an integer".format(name))
+        if value < 0:
+            raise ValueError("{} must be >= 0".format(name))
 
     @property
     def width(self):
@@ -23,10 +39,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         '''Private width attribute setter'''
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
+        self.integer_validator1("width", value)
         self.__width = value
 
     @property
@@ -37,10 +50,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         '''Private height attribute setter'''
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
+        self.integer_validator1("height", value)
         self.__height = value
 
     @property
@@ -51,10 +61,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         '''Private x attribute setter'''
-        if not isinstance(value, int):
-            raise TypeError("x must be an integer")
-        if value < 0:
-            raise ValueError("x must be >= 0")
+        self.integer_validator2("x", value)
         self.__x = value
 
     @property
@@ -65,8 +72,5 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         '''Private y attribute setter'''
-        if not isinstance(value, int):
-            raise TypeError("y must be an integer")
-        if value < 0:
-            raise ValueError("y must be >= 0")
+        self.integer_validator2("y", value)
         self.__y = value
