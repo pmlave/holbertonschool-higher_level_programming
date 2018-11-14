@@ -76,3 +76,7 @@ class Rectangle(Base):
         '''Private y attribute setter'''
         self.integer_validator2("y", value)
         self.__y = value
+
+    def area(self):
+        '''Returns the area of the rectangle'''
+        return self.__height * self.__width
