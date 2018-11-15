@@ -15,5 +15,21 @@ class Square(Rectangle):
         return "[{}] ({}) {:d}/{:d} - {:d}".format(
             self.__class__.__name__, self.id, self.x, self.y, self.size)
 
+    @property
+    def size(self):
+        '''Getter for public attribute size'''
+        return self.width
 
+    @size.setter
+    def size(self, value):
+        '''Setting the variables to equal size'''
+        self.integer_validator1("width", value)
+        self.width = value
+
+    def integer_validator1(self, name, value):
+        '''Checks integer value for height or width'''
+        if not type(value) == int:
+            raise TypeError("{} must be an integer".format(name))
+        if value < 1:
+            raise ValueError("{} must be > 0".format(name))
 #
