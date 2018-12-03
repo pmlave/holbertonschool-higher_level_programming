@@ -1,0 +1,1 @@
+In this project we are learning about sql and database management.
