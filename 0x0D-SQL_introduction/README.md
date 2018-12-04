@@ -13,3 +13,4 @@ In this project we are learning about sql and database management.
 10. List records of the new table that match specific tags.
 11. List all records matching certain tags where the score tag >= 10.
 12. Update the score tag value of a certain user.
+13. Delete any records where score <= 5.
