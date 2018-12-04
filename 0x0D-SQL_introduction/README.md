@@ -9,3 +9,5 @@ In this project we are learning about sql and database management.
 6. List all rows of a table in a database.
 7. Create new rows in a table in a database.
 8. Count the number of rows in a table matching a name and value.
+9. Create a new table and populate it with tag value pairs.
+10. List records of the new table that match specific tags.
