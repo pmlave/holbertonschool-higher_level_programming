@@ -14,3 +14,6 @@ In this project we are learning about sql and database management.
 11. List all records matching certain tags where the score tag >= 10.
 12. Update the score tag value of a certain user.
 13. Delete any records where score <= 5.
+14. Averaging the score values from the table.
+15. List how many times a certain score value appears in the table.
+16. List all records where name is not NULL.
