@@ -8,3 +8,4 @@ In this project we are learning about sql and database management.
 5. Show all data from a table in a database.
 6. List all rows of a table in a database.
 7. Create new rows in a table in a database.
+8. Count the number of rows in a table matching a name and value.
