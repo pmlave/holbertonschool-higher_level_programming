@@ -10,3 +10,5 @@ This project will take is more in depth into mysql.
 7. Crete the table as above with more fields such as state id that must be a foreign key.
 8. List all cities of California that can be found in the database.
 9. List all cities in the database listed by id and state.
+10. Create a query that will select all tv_shows that have an associated tv_show_genre id.
+11. Create a query that lists all shows including those without a tv_show_genre id.
