@@ -8,3 +8,5 @@ This project will take is more in depth into mysql.
 5. Create a table entry as above with the id being unique.
 6. Create a table with id being unique, not null, a primary key, and auto generated.
 7. Crete the table as above with more fields such as state id that must be a foreign key.
+8. List all cities of California that can be found in the database.
+9. List all cities in the database listed by id and state.
