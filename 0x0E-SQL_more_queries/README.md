@@ -12,3 +12,5 @@ This project will take is more in depth into mysql.
 9. List all cities in the database listed by id and state.
 10. Create a query that will select all tv_shows that have an associated tv_show_genre id.
 11. Create a query that lists all shows including those without a tv_show_genre id.
+12. Create a query that lists only shows where tv_show_genre id is NULL.
+13. Create a query that lists the number of shows that have a given tv_show_genre id.
