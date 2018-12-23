@@ -3,6 +3,7 @@
 
 import json
 
+
 class Base:
     """Base class beginning"""
     __nb_objects = 0
@@ -16,10 +17,10 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         '''Serialize the data into JSON'''
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
-            for each_dict in list_dictionaries:
-                return json.dumps(each_dict)
+            return json.dumps(list_dictionaries)
