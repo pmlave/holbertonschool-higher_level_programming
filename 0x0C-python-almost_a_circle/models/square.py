@@ -53,3 +53,12 @@ class Square(Rectangle):
                 self.id = kwargs['id']
             if 'size' in kwargs:
                 self.size = kwargs['size']
+
+    def to_dictionary(self):
+        '''Return a dictionary representation of the rectangle'''
+        new_dict = {}
+        new_dict['id'] = self.id
+        new_dict['size'] = self.size
+        new_dict['x'] = self.x
+        new_dict['y'] = self.y
+        return new_dict
