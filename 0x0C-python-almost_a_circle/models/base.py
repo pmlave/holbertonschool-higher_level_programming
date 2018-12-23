@@ -48,3 +48,20 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return empty
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Return an instance with all attributes set. The two if checks verify
+        that we will be updating based on the correct class.
+        """
+        if cls.__name__ == "Square":
+            holder = cls(1)
+        if cls.__name__ == "Rectangle":
+            holder = cls(1, 1)
+        """
+        Update holder instance by passing the dict given through the update
+        method in each given class.
+        """
+        holder.update(**dictionary)
+        return holder
