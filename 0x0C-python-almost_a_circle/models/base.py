@@ -65,3 +65,30 @@ class Base:
         """
         holder.update(**dictionary)
         return holder
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Return a list of instances from the json file
+        First step is to set the filer to the correct class name
+        """
+        filer = "{}.json".format(cls.__name__)
+        lister = []
+
+        """
+        Need to try to open file first, but if it fails, we will do nothing
+        and no new instances will be created.
+        """
+        try:
+            with open(filer, "r") as open_file:
+                lister = cls.from_json_string(open_file.read())
+            """
+            Iterate through the new list to create a new representation
+            as an item in the list. Lister needs to be **lister because
+            that is the format that the create method requires.
+            """
+            for counter, value in enumerate(lister):
+                lister[counter] = cls.create(**lister[counter])
+        except:
+            pass
+        return lister
