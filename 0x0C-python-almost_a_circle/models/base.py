@@ -7,7 +7,6 @@ import json
 class Base:
     """Base class beginning"""
     __nb_objects = 0
-    __file_path = "file.json"
 
     def __init__(self, id=None):
         """Class constructor for base"""
@@ -24,3 +23,20 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        '''Wrties the Json string to a file'''
+        list_dicts = []
+        """
+        All instances in list will be same type ex. a list of all square
+        instances or a list of all rectangle instances. Only need to do
+        the following command once.
+        """
+        filer = "{}.json".format(cls.__name__)
+        if list_objs is not None:
+            '''Could be many representations, need to iterate through all'''
+            for objects in list_objs:
+                list_dicts.append(cls.to_dictionary(objects))
+        with open(filer, "w") as file_write:
+            file_write.write(cls.to_json_string(list_dicts))
