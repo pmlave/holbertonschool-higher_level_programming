@@ -1,1 +1,1 @@
-Beginning to work with modules in extensive classes in Python.
+Beginning to work with modules in extensive classes in Python. Each part of this assignment will simply build upon the previous question. We will do so by adding more and more to the classes we have created in each step.
