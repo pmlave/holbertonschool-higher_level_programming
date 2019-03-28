@@ -1,4 +1,4 @@
-#In this project we are exploring in depth the modules MySQLdb and SQLAlchemy.
+# In this project we are exploring in depth the modules MySQLdb and SQLAlchemy.
 ---
 0. Write a script that lists all states from the database.
 1. Write a script that lists all states with a name starting with N (upper N) from the database.
