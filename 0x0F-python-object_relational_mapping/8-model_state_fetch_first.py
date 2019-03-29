@@ -13,6 +13,6 @@ if __name__ == "__main__":
 
         Session = sessionmaker(bind=engine)
         session = Session()
-        state = session.query(State).filter_by(id=1)
-        print("{}: {}".format(state[0].id, state[0].name))
+        state = session.query(State).first()
+        print("{}: {}".format(state.id, state.name))
         session.close()
