@@ -10,3 +10,6 @@
 7. Query with sqlalchemy to list all state objects from the database.
 8. Query with sqlalchemy to list only the first state object in the database.
 9. Query with sqlalchemy to list all state objects that contain the letter 'a'.
+10. Query with sqlalchemy to list a state given the state name.
+11. Write a script with sqlalchemy that adds a new state object to the database.
+12. Write a script with sqlalchemy that updates an existing state object in the database.
